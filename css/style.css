@@ -96,11 +96,11 @@ a {
 @media screen and (max-width: 650px) {
     .continer {
         grid-template-columns: 1fr;
-        width: 70vh;
+        width: 60vh;
         gap: 50px;
     }
 
     .img img, canvas {
-        max-width: 75vw;
+        max-width: 70vw;
     }
 }
