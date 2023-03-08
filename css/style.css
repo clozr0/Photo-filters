@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #333;
+}
+
+a {
+    text-decoration: none;
+}
+
+.continer {
+    background-color: #222;
+    width: 100vh;
+    margin: 20px auto;
+    border-radius: 25px;
+    display: grid;
+    grid-template-columns: 5fr 3fr;
+    padding: 20px;
+}
+
+.img {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.img img, canvas {
+    max-width: 45vh;
+    max-height: 60vh;
+    border-radius: 25px;
+}
+
+.upload input {
+    display: none;
+}
+
+.upload label {
+    color: white;
+    padding: 8px 20px;
+    border: 2px #fff dashed;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.upload label:hover {
+    background-color: #ffffff2a;
+}
+
+.filters ul,
+.filters ul li {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.filters ul li label {
+    color: #fff;
+}
+
+.filters ul li:last-child {
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.filters ul li a , span {
+    color: #fff;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.filters ul li a {
+    background-color: #ff2626;
+}
+
+.filters ul li span {
+    background-color: #4e4eff;
+}
+
+.filters ul li a:hover {
+    background-color: #fd4848;
+}
+
+.filters ul li span:hover {
+    background-color: #6c6cff;
+}
+
+
+@media screen and (max-width: 650px) {
+    .continer {
+        grid-template-columns: 1fr;
+        width: 70vh;
+        gap: 50px;
+    }
+
+    .img img, canvas {
+        max-width: 75vw;
+    }
+}
